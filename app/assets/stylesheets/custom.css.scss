@@ -1,4 +1,36 @@
-@import "bootstrap-sprockets";
+$navbar-default-bg: #3B0B17;
+
 @import "bootstrap";
+@import "bootstrap-sprockets";
 
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans|Gugi|Ubuntu');
 
+.navbar-brand{
+	float: left;
+	font-size: 1.7em;
+	color: #FFF;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	font-family: Gugi;
+	font-style: italic;
+}
+
+.navbar-brand:hover{
+	color: #fff;
+	text-decoration: none;
+}
+
+#navbar-button{
+	font-family: Ubuntu;
+}
+
+.center{
+	text-align: center;
+	background-image: url("https://cdn.pixabay.com/photo/2015/10/30/20/13/sunrise-1014711_960_720.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.page-header{
+	font-family: Ubuntu;
+}

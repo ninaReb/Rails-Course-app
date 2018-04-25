@@ -1,9 +1,16 @@
-<h1>showing article</h1>
+<div class="page-header">
+  <h1><%= @article.title %></h1>
+</div>
 
-<p>Title: <%= @article.title %></p>
+<div class="panel panel-default">
+  <div class="panel-body">
+    <p><%= @article.description %></p>
+  </div>
+</div>
 
-<p>Description: <%= @article.description %></p>
+<div  class="btn-group" role="group" aria-label="...">
+	<%=  link_to "Back to listing", articles_path, type: "button", class: "btn btn-default" %> 
+	<%=  link_to "Edit this", edit_article_path(@article), type: "button", class: "btn btn-default" %>
+</div>
 
-<%=  link_to "Back to listing", articles_path %> |
-<%=  link_to "Edit this", edit_article_path(@article) %>
 
